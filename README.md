@@ -1,6 +1,6 @@
 # Fresh Salt
 
-Copy freshly generated WordPress security keys to your clipboard.
+An Alfred 2 workflow to quickly copy freshly generated WordPress security/secret keys to your clipboard.
 
 ## Installation
 
