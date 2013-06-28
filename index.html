@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Fresh Salt by boogah</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Fresh Salt : An Alfred 2 workflow to quickly copy freshly generated WordPress security/secret keys to your clipboard." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fresh Salt</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Fresh Salt</h1>
-          <h2>An Alfred 2 workflow to quickly copy freshly generated WordPress security/secret keys to your clipboard.</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/boogah/fresh-salt">View on GitHub</a>
+
+          <h1 id="project_title">Fresh Salt</h1>
+          <h2 id="project_tagline">An Alfred 2 workflow to quickly copy freshly generated WordPress security/secret keys to your clipboard.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/boogah/fresh-salt/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/boogah/fresh-salt/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/boogah/fresh-salt/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/boogah/fresh-salt/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/boogah/fresh-salt" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-        <hr>
-
-        <section id="main_content">
-          <h1>
-<a name="fresh-salt" class="anchor" href="#fresh-salt"><span class="octicon octicon-link"></span></a>Fresh Salt</h1>
-
-<p>An Alfred 2 workflow to quickly copy freshly generated WordPress security/secret keys to your clipboard.</p>
-
-<h2>
+<ul>
+<li>Mac OS X</li>
+<li><a href="http://www.alfredapp.com">Alfred 2</a></li>
+<li><a href="http://www.alfredapp.com/powerpack/">Alfred Powerpack</a></li>
+</ul><h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>Download <a href="https://raw.github.com/boogah/fresh-salt/master/Fresh%20Salt.alfredworkflow">Fresh Salt</a> and double-click to import it into <a href="http://www.alfredapp.com">Alfred 2</a>.</p>
@@ -50,7 +52,7 @@
 </ul><h2>
 <a name="release-notes" class="anchor" href="#release-notes"><span class="octicon octicon-link"></span></a>Release Notes</h2>
 
-<p>Listen, it's just a stupid cURL request &amp; pbcopy. But it's faster than loading the <a href="https://api.wordpress.org/secret-key/1.1/salt/">WordPress Secret Key Generator</a> and copying the results manually.</p>
+<p>Listen, it's just a stupid <code>curl</code> request piped to <code>pbcopy</code>. But it's faster than loading the <a href="https://api.wordpress.org/secret-key/1.1/salt/">WordPress Secret Key Generator</a> and copying the results manually.</p>
 
 <p>Since I deal with <em>at least</em> a couple exploited WordPress sites a week — and regenerating the keys is always a part of my cleanup workflow — I'm sort of scratching my own itch here. And while I'm not sure if anyone else will find this useful, I still figure that it's worth sharing.</p>
 
@@ -58,14 +60,18 @@
 <a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p><a href="http://sensibleworld.com/news/salt-shaker-icon-131/">Icon</a> courtesy of Jory Raphael at Sensible World.</p>
-        </section>
+      </section>
+    </div>
 
-        <footer>
-          Fresh Salt is maintained by <a href="https://github.com/boogah">boogah</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fresh Salt maintained by <a href="https://github.com/boogah">boogah</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-                  <script type="text/javascript">
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -76,7 +82,6 @@
             } catch(err) {}
           </script>
 
-      </div>
-    </div>
+
   </body>
 </html>
